@@ -31,7 +31,7 @@ public class ModelTest {
 Your data are now ready to be displayed as you want, all you have to do is to make a list of the data you want to display and construct the table :
 ```java
 // Test data :
-List<InheritedModel> test = new ArrayList<InheritedModel>();
+List<ModelTest> test = new ArrayList<ModelTest>();
 ModelTest t = new ModelTest();
 t.id = 30;
 t.test = "Test column 1";
@@ -62,7 +62,7 @@ oProperties.addActionListener(new ActionListener() {
     table.executeActionOnClickedItem(new ParametrizedAction() {
       @Override					
       public void executeAction(Object o) {
-        InheritedModel oModel = (InheritedModel) o;
+        ModelTest oModel = (ModelTest) o;
         System.out.println("Show properties of item : " + oModel.id);					
       }				
     });			
